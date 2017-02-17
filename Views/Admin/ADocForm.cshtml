@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "ADocForm";
+    Layout = "~/Views/AdminDashLayout.cshtml";
+    <link href="~/Content/ClientDashSheet.css" rel="stylesheet" />
+}
+
+<body style="background-color: rgba(81, 92, 82, 1);">
+    <!-- ./container -->
+    <div class="container" style=" background-color:#333; border-radius:5%; width:55% ;
+ height:400%;  margin-top:11%; margin-bottom:6%">
+        <h1 style="color:white; font-size:400%;font-family:Gabriola; margin-left:25%">Doctor's Information</h1>
+
+        <form style=" margin-bottom:2%; ">
+            <fieldset id="inputs">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input id="doctor id" class="form-control" type="text" name="Doctor_Id" placeholder="Doctor_Id" required /><br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="specialist" class="form-control" type="text" name="in which specialist"
+                               placeholder="in which specialist" required /><br />
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input class="form-control" name="avail timing" placeholder="avail timing" type="text" /><br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="working days" class="form-control" type="text"
+                               name="working days" placeholder="working days" required /><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <select class="form-control" style="width:100%">
+
+                            <option>Status</option>
+                            <option>Available</option>
+                            <option>Not Available</option>
+                        </select><br />
+
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="fee charges" type="text" class="form-control" style="width:100%" name="Fee Charges" placeholder=" fee charges" required />
+
+                        <br />
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <button type="button" id="btn1" style=" margin-left:45%; margin-bottom:2%; border-radius: 10px; font-family: Gabriola;
+ color: rgba(194, 112, 76, 1); font-size:25px; border: solid double">
+                    Register
+                </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+

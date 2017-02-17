@@ -1,0 +1,262 @@
+﻿@{
+    ViewBag.Title = "CrouselDivs";
+    Layout = "~/Views/MainFirstLayout.cshtml";
+    <link href="~/Content/MasterCrouselSStyle.css" rel="stylesheet" />
+}
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="~/Content/MasterCrouselSStyle.css" rel="stylesheet" />
+
+
+
+<div class="container-fluid" style="margin-top: 30px; background-color: black">
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" background-color: rgba(82, 81, 92, 1)">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+
+
+
+                <img src="~/OurProImages/doc1.jpg"  class="img1" alt="First " >
+                <div class="carousel-caption">
+                    <marquee behavior="slide" scrollamount="15" loop="1" direction="left" hspace="5%" vspace="5%">
+                        <p style="font-size: 70px; color: #333"><b>Doctor Quick</b></p><br>
+                    </marquee>
+                    <h1 style=" color:blue">
+                        Environmental Management<br>
+                        Agency
+                    </h1>
+                </div>
+            </div>
+
+            <div class="item">
+
+
+                <img src="~/OurProImages/doc3.jpg"    class="img1" alt="Second">
+                <div class="carousel-caption">
+                    <p style="font-size: 70px; color:#333">Doctor Quick</p><br>
+
+                    <h1 style=" color:blue">
+                        Environmental Management<br>
+                        Agency
+                    </h1>
+                </div>
+            </div>
+
+            <div class="item">
+
+
+                <img src="~/OurProImages/doc4.jpg"   class="img1" alt="Third">
+                <div class="carousel-caption">
+                    <p style="font-size: 70px; color:#333">Doctor Quick</p><br>
+                    <h1 style=" color:blue">
+                        Environmental Management<br>
+                        Agency
+                    </h1>
+                </div>
+            </div>
+
+            <div class="item">
+
+                <img src="~/OurProImages/4.jpg"    class="img1" alt="Fourth">
+                <div class="carousel-caption">
+                    <p style="font-size: 70px; color:#333">Doctor Quick</p><br>
+                    <h1 style=" color:blue">
+                        Environmental Management<br>
+                        Agency
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+
+<!--3 divs-->
+
+<div class="container-fluid" style="background-color: black; ">
+    <div class=" container-fluid" style="background-color: rgba(81, 92, 82, 1); margin-top: 30px; margin-bottom:30px; border-radius: 60px; border-bottom-right-radius: 0px; border-top-left-radius: 0px;">
+        <div class="row">
+            <h1 >Why choose the Doctor Quick</h1>
+        </div>
+        <div class=" col-md-4  " id="white" style="margin-left:14%">
+            <p style="margin-left:60px; opacity:0.7 ">
+
+
+                <img src="~/OurProImages/book.jpg"    class="img-circle picColor imgBox" width="120" height="110" style="margin-top :10px" />
+            </p>
+            <h1 class="fadeInDown "> Easy Booking</h1>
+            <p id="P1">
+                Booking an appointment at our dental clinic is as easy as doing 2 clicks!
+            </p>
+        </div>
+        <div class="col-md-4 " id="white">
+            <p style="margin-left:60px;">
+
+                <img src="~/OurProImages/ppllogo.jpg"  class="img-circle picColor imgBox" width="120" height="110" style="margin-top :10px" />
+            </p>
+            <h1> Experience</h1>
+            <p id="P1">
+                Combined, our 5 dentists
+                have over half a century of practical experience.
+                They are ready to put it to action for you!
+            </p>
+        </div>
+        <div class="col-md-4 " id="white">
+            <p style="margin-left:60px;">
+                <img src="~/OurProImages/easybooking.jpg" 
+                class="img-circle picColor imgBox" width="120" height="110" style="margin-top :10px" />
+            </p>
+            <h1>Flexible schedule</h1>
+            <p id="P1">
+                We work during all state holidays, besides working till late
+                during the regular days. In case of emergencies we accept weekend bookings.
+            </p>
+        </div>
+    </div>
+
+    </div>
+<!--
+    <div class="container" style="margin-bottom:3%">
+    <header> <h1 style="text-transform:uppercase">Our Departments</h1></header>
+    <!--1 2 3 div-->
+   <!--
+    <div class="row">
+        <div class="col-md-4 Sixdivsimages">
+            <div id="cont">
+                <div class="carddiv">
+                    <a href="/Departments/LaboratoryBloodBank">
+                        <img src="~/depImages/LaboratoryBloodBank.jpg" class="frontofcard" width="400" height="200" 
+                             style="margin-left:15%" alt="img">
+
+                        <h3 class="backofcard">Cardialogy</h3></a>
+
+                    </div>
+                </div>
+
+                </div>
+
+
+
+
+        <div class="col-md-4 Sixdivsimages">
+            <div id="cont">
+                <div class="carddiv">
+                    <a href="/Departments/Pediatrics">
+                        <img src="~/depImages/Pedriatics.jpg" class="frontofcard" width="400" height="200" style="margin-left:15%" alt="img">
+
+                        <h3 class="backofcard">Pediatrics</h3>
+                    </a>
+                    </div>
+                </div>
+                </div>
+
+
+
+        <div class="col-md-4 Sixdivsimages">
+            <div id="cont">
+                <div class="carddiv">
+                    <a href="/Departments/ERoom">
+
+                        <img src="~/depImages/EmergencyRoom.jpg" class="frontofcard" width="400" height="200" style="margin-right:18%" alt="img">
+
+                        <h3 class="backofcard">Emergency Room</h3>
+                    </a>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <!--4 5 6 div-->
+         <!--   <div class="row" style="margin-top:4%">
+                <div class="col-md-4 Sixdivsimages">
+                    <div id="cont">
+                        <div class="carddiv">
+
+                            <a href="/Departments/Dentisry">
+                                <img src="~/depImages/Dentisry.jpg" class="frontofcard" width="300" height="200" 
+                                     style="margin-left:30%" alt="img">
+
+                                <h3 class="backofcard">Dentisry</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-4 Sixdivsimages">
+                    <div id="cont">
+                        <div class="carddiv">
+
+                            <a href="/Departments/LaboratoryBloodBank">
+                                <img src="~/depImages/Surgery.jpg" class="frontofcard" width="300" height="200" 
+                                     style="margin-left:18%" alt="img">
+
+                                <h3 class="backofcard">Cardialogy</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-4 Sixdivsimages">
+                    <div id="cont">
+                        <div class="carddiv">
+                            <a href="/Departments/Cardiology">
+
+                                <img src="~/depImages/Nursing.jpg" class="frontofcard" width="300" height="200" 
+                                     style="margin-left%" alt="img">
+
+                                <h3 class="backofcard">Cardialogy</h3>
+                               
+                            </a>
+
+
+                        </div>
+
+
+
+
+
+
+
+             
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+</div>
+-->

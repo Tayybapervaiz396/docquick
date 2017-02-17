@@ -1,0 +1,185 @@
+﻿@{
+    ViewBag.Title = "PList";
+    Layout = "~/Views/ClientDashLayout.cshtml";
+  <link href="~/Content/TabularSheet.css" rel="stylesheet" />
+}
+<body style="background-color: rgba(81, 92, 82, 1); ">
+    <!-- ./container -->
+    <div class="container" style=" background-color:#333 ;margin-left:10%; border-radius: 5%;
+ width: 80%; height: 800px; margin-top: 5%; margin-bottom: 6%">
+        <h1 style="color:white; font-family:Gabriola;">Patient Records List</h1>
+        <form style=" margin-bottom:2%; margin-left:15% ">
+            <fieldset id="inputs">
+                <div class="row">
+                    <div class="col-sm-3" style="margin-left:3%">
+                        <input id="firstname" class="form-control" type="text" name="firstname" placeholder="First Name*" required
+                               style="  height:50px" />
+                    </div>
+                    <div class="col-sm-3 ">
+                        <input id="PhoneNo" class="form-control" type="tel" name="phoneno" placeholder="Phone No*" required
+                               style=" height: 50px" /><br />
+                    </div>
+                    <div class="col-sm-3 ">
+                        <input id="emailad" class="form-control" type="text" name="email" placeholder="Email adress*"
+                               required style=" height: 50px" /><br />
+                    </div>
+
+                    <div class="col-sm-3" style="margin-left:26%">
+
+                        <button type="button" id="btn1" style=" margin-left:42%; margin-bottom:2%; border-radius: 10px; font-family: Gabriola;
+ color: rgba(194, 112, 76, 1); font-size:27px; border: solid double; width:40%">
+                            Search
+                        </button></div></div></fieldset></form>
+                        <div style="position: absolute; height: 83%;width:74%; overflow: auto; ">
+                            <div style="height: 40%;">
+                                <table class="blue">
+                                    <thead style="width:250%; font-family:Gabriola; padding:10%; font-size:150%">
+                                        <tr>
+                                            <th>Firstname</th>
+                                            <th>Lastname</th>
+
+                                            <th>Password</th>
+                                            <th>Email Address</th>
+                                            <th>Phone No</th>
+                                            <th>Gender </th>
+                                            <th>Emergency No</th>
+
+                                            <th>City</th>
+                                            <th>Date Of Birthday</th>
+                                            <th>Patient ID</th>
+
+                                            <th>Guardian Name</th>
+                                            <th>Guardian Phone No</th>
+
+                                            <th>State</th>
+                                            <th>Martial Status</th>
+                                            <th>Occupation</th>
+                                            <th>Consulting dr.name </th>
+                                            <th>Department</th>
+                                            <th>Ward No</th>
+                                            <th>Bed No</th>
+                                            <th>Office Phone No</th>
+                                            <th>Emergency Phone No</th>
+                                            <th>Relationship to patient</th>
+                                            <th> responsible for patient?</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                            <td>Non</td>
+                                            <td>Mais</td>
+                                            <td>Allo !</td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+
+
+
+
+                            </div>
+
+
+                            <script>
+                                ; (function ($) {
+                                    $.fn.fixMe = function () {
+                                        return this.each(function () {
+                                            var $this = $(this),
+                                               $t_fixed;
+                                            function init() {
+                                                $this.wrap('<div class="container" />');
+                                                $t_fixed = $this.clone();
+                                                $t_fixed.find("tbody").remove().end().addClass("fixed").insertBefore($this);
+                                                resizeFixed();
+                                            }
+                                            function resizeFixed() {
+                                                $t_fixed.find("th").each(function (index) {
+                                                    $(this).css("width", $this.find("th").eq(index).outerWidth() + "px");
+                                                });
+                                            }
+                                            function scrollFixed() {
+                                                var offset = $(this).scrollTop(),
+                                                tableOffsetTop = $this.offset().top,
+                                                tableOffsetBottom = tableOffsetTop + $this.height() - $this.find("thead").height();
+                                                if (offset < tableOffsetTop || offset > tableOffsetBottom)
+                                                    $t_fixed.hide();
+                                                else if (offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
+                                                    $t_fixed.show();
+                                            }
+                                            $(window).resize(resizeFixed);
+                                            $(window).scroll(scrollFixed);
+                                            init();
+                                        });
+                                    };
+                                })(jQuery);
+
+                                $(document).ready(function () {
+                                    $("table").fixMe();
+                                    $(".up").click(function () {
+                                        $('html, body').animate({
+                                            scrollTop: 0
+                                        }, 2000);
+                                    });
+                                });
+                            </script>
+
+
+
+                        </div>
+
+                    </div>
+
+
+</body>
+
+  
+
+

@@ -1,0 +1,72 @@
+﻿
+body{
+  font:1.2em normal Arial,sans-serif;
+ 
+}
+
+h1{
+  text-align:center;
+
+  font-family:Gabriola;
+ 
+
+  margin:20px 0;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+}
+
+table{
+  border-collapse:collapse;
+  width:350%;
+}
+
+.blue{
+  border:2px solid rgba(194, 112, 76, 1);
+}
+
+.blue thead{
+background:rgba(81, 92, 82, 1);
+
+}
+
+
+thead{
+  color:white;
+}
+
+th,td{
+  text-align:center;
+  padding:5px 0;
+}
+
+tbody tr:nth-child(even){
+  background:white;
+}
+
+tbody {
+    background-color:white;
+}
+
+/*
+tbody tr:hover{
+background:#BDC3C7;
+  color:#FFFFFF;
+}  
+ */
+
+.fixed{
+  top:0;
+  position:fixed;
+  width:auto;
+  display:none;
+  border:none;
+}
+
+.scrollMore{
+  margin-top:600px;
+}
+
+

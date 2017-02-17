@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "ProfileP";
+    Layout = "~/Views/ClientDashLayout.cshtml";
+    <link href="~/Content/ProSheet.css" rel="stylesheet" />
+}
+
+<body>
+    <div class="ACon">
+        <div class="Profile">
+            <div class="Img">
+                <div class="overlay">
+                    <span><img /></span>
+                </div>
+            </div>
+
+            <div class="PopUp">Open Profile</div>
+            <div class="clickPopUp">
+                <h4><a class="username" href="">Haniya</a></h4>
+                <h5 class="buttons "><a class="username" href="">Haroon</a></h5>
+                <h5 class="buttons "><a class="username" href="">haniyaaharoon12@gmail.com</a></h5>
+                <h5 class="buttons "><a class="username" href="">1-s-5 multan road lahore</a></h5>
+                <h5 class="buttons "><a class="username" href="">Female</a></h5>
+                <h5 class="buttons"><a class="username" href="">04236984555</a></h5>
+                <h5 class="buttons "><a class="username" href="">Lahore</a></h5>
+                <h5 class="buttons"><a class="username" href="">11-5-1994</a></h5>
+               
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                var $Menu = $('.Img');
+                $('.Img').mouseenter(function () {
+                    $('.PopUp').css('opacity', '1');
+                    $('.PopUp').css('margin-top', '20px');
+                });
+                $('.Img').mouseleave(function () {
+                    $('.PopUp').css('opacity', '0');
+                    $('.PopUp').css('margin-top', '0px');
+                });
+                $('.Img').on('click', function () {
+                    if ($Menu.hasClass('Img')) {
+                        $('.Img').addClass('click');
+                        $('.Img').removeClass('Img');
+                        $('.Profile').addClass('clickProfile');
+                        $('.Profile').removeClass('Profile');
+                        $('.clickPopUp').css('display', 'block');
+                        $('.PopUp').css('display', 'none');
+                    } else {
+                        $('.click').addClass('Img');
+                        $('.click').removeClass('click');
+                        $('.clickProfile').addClass('Profile');
+                        $('.clickProfile').removeClass('clickProfile');
+                        $('.clickPopUp').css('display', 'none');
+                        $('.PopUp').css('display', 'block');
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+

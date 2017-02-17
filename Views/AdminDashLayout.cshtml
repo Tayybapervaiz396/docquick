@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="~/Content/ClientDashSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <div class="navbar navbar-default navbar-fixed-top " style="background-color:#333">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+         
+            <p class="navbar-brand" style="font-family: Gabriola; font-size:280%; text-transform: uppercase; 
+color:rgba(194, 112, 76, 1);
+				margin-top:20px; ">DOCTOR QUICK</p>
+            
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 5%; color: rgba(194, 112, 76, 1);">
+
+                <li>
+                    <a href="/Admin/SignUpTable" style="font-size:150%; font-family:gabriola;" onmouseover="this.style.color = 'rgba(194, 112, 76, 1)'" onmouseout="    this.style.color = 'white'">
+                        <span class="glyphicon glyphicon-user glyph"></span>
+                        Sign Up Table
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Main/SignIn" style="font-size:150%; font-family:gabriola;" onmouseover="this.style.color = 'rgba(194, 112, 76, 1)'" onmouseout="    this.style.color = 'white'">
+                        <span class="glyphicon glyphicon-log-out glyph"></span>
+                        Sign Out
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+        </div>
+
+
+
+        </div>
+
+        <aside>
+            <nav class="navbar navbar-inverse sidebar navbar-fixed-top" role="navigation">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+                <div class="nav-side-menu">
+                    <div class="brand">Admin Panel</div>
+                    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+                    <div class="menu-list">
+
+                        <ul id="menu-content" class="menu-content collapse out">
+                            <li>
+                                <a href="/Admin/AdminDash">
+                                    <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                </a>
+                            </li>
+
+
+
+
+
+                            <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                <a href="#"><i class="fa fa-globe fa-lg"></i> Appointment <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="service">
+                                <li><a href="/Admin/AAppFormTable"> Online appointment Form</a></li>
+                                <li><a href="/Admin/AAppTable">Appointment Form Table</a></li>
+
+                            </ul>
+
+
+
+                            <li data-toggle="collapse" data-target="#new" class="collapsed">
+                                <a href="#"><i class="fa fa-car fa-lg"></i> Patient Registeration <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="new">
+
+                                <li><a href="/Admin/ARegFormTable">Registration Form</a></li>
+                                <li><a href="/Admin/ARegTable">Registration Data</a></li>
+                            </ul>
+
+
+
+
+
+                            
+
+
+                            <li data-toggle="collapse" data-target="#my" class="collapsed">
+                                <a href="#">
+                                    <i class="fa fa-users fa-lg"></i> Doctor Information<span class="arrow"></span>
+
+                                </a>
+                            </li>
+                            <ul class="sub-menu collapse" id="my">
+
+                                <li><a href="/Admin/ADocForm">Doctor Form</a></li>
+                                <li><a href="/Admin/ADocFormTable">Doctor Table </a></li>
+                            </ul>
+
+
+                            <li data-toggle="collapse" data-target="#pro" class="collapsed">
+                                <a href="#"><i class="fa fa-user fa-lg"></i> Profile <span class="arrow"></span></a>
+                            </li>
+                            <ul class="sub-menu collapse" id="pro">
+
+                                <li><a href="/Admin/ProForm">Profile Form</a></li>
+                                <li><a href="/Admin/ProTable">Profile Table</a></li>
+                            </ul>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </aside>
+
+
+        <div class="main">
+        </div>
+
+        <script>
+            function htmlbodyHeightUpdate() {
+                var height3 = $(window).height()
+                var height1 = $('.nav').height() + 50
+                height2 = $('.main').height()
+                if (height2 > height3) {
+                    $('html').height(Math.max(height1, height3, height2) + 10);
+                    $('body').height(Math.max(height1, height3, height2) + 10);
+                }
+                else {
+                    $('html').height(Math.max(height1, height3, height2));
+                    $('body').height(Math.max(height1, height3, height2));
+                }
+
+            }
+            $(document).ready(function () {
+                htmlbodyHeightUpdate()
+                $(window).resize(function () {
+                    htmlbodyHeightUpdate()
+                });
+                $(window).scroll(function () {
+                    height2 = $('.main').height()
+                    htmlbodyHeightUpdate()
+                });
+            });</script>
+        <div>
+            @RenderBody()
+        </div>
+</body>
+
+</html>

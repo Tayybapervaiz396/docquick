@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/MainFirstLayout.cshtml";
+}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="~/Content/custom.css" rel="stylesheet" />
+<body style="background-color: rgba(81, 92, 82, 1);">
+    <!-- ./container -->
+    <div class="container" style=" background-color: #333; border-radius:5%; width:50% ; 
+ height:550%;  margin-top:8%; margin-bottom:6%">
+        <h1>Sign Up  Here</h1>
+        
+        <form action="/Main/Add" method="post"  style="margin-top:1%; margin-bottom:2%; ">
+            <fieldset id="inputs">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input id="FirstName" class="form-control" type="text" name="FirstName"
+                               placeholder="First Name*" required /><br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="LastName" class="form-control" type="text" name="LastName"
+                               placeholder="Last Name*" required /><br />
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input class="form-control" id="Password" name="Password" placeholder="Password*"
+                               type="password" />
+                        <br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="CPassword" type="password" class="form-control" name="CPassword"
+                               placeholder=" Confirm Password*" required />
+                        <br />
+                    </div>
+
+
+                </div><input id="Email" type="email" class="form-control" style="width: 100%; " name="Email" placeholder="Email*" required><br />
+
+                <input id="Address" class="form-control" type="text" style="width: 100%; " name="Address" placeholder="Address*" required /><br />
+
+
+
+                <label style="margin-left:10%; color:white">Gender:</label>  &nbsp;<input type="radio" name="Gender" />
+                <label style=" color:white">
+                    Female
+                </label>
+                <input type="radio" name="Gender" />&nbsp;<label style=" color:white"> Male</label>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input id="PhoneNo" type="tel" class="form-control" name="PhoneNo" placeholder="Phone No*" required /><br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="City" class="form-control" type="text" name="City" placeholder="City*" required /><br />
+                    </div>
+
+
+                </div>
+
+                <input id="DOBirth" class="form-control" type="date" style="width: 100%; " name="DOBirth" placeholder=" Date of Birth*" required /><br />
+
+                <button type="submit" id="SUButton" value="SignUp" style=" margin-left:45%; margin-bottom:2%; border-radius: 10px; font-family: Gabriola;
+                  color: rgba(194, 112, 76, 1); font-size:25px; border: solid double">Register</button>
+            </fieldset>
+        </form>
+        </div>
+  
+</body>
+

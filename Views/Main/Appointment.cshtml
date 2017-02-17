@@ -1,0 +1,376 @@
+﻿@{
+    ViewBag.Title = "Appointment";
+    Layout = "~/Views/MainFirstLayout.cshtml";
+}
+
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="~/Content/AppointmentSheet.css" rel="stylesheet" />
+
+
+<style>
+    body {
+        background-color: rgba(81, 92, 82, 1);
+
+    }
+
+    h1 {
+        margin-top: 1%;
+        width: 100%;
+        color: rgba(194, 112, 76, 1);
+        text-align: center;
+        font-family: gabriola;
+        font-weight: bold;
+    }
+
+    .img {
+        position: relative;
+        width: 30%;
+        height: 20%;
+        overflow: hidden;
+        margin: 2%;
+        margin-top: 1%;
+        background-color: #333;
+    }
+
+        .img p, .img h2 {
+            color: #fff;
+            padding: 1%;
+            left: 3%;
+            margin-top: 2%;
+            position: relative;
+        }
+
+        .img p {
+            font-family: 'Times New Roman';
+            font-size: 100%;
+        }
+
+        .img h2 {
+            font-family: 'Times New Roman';
+            font-size: 150%;
+        }
+
+    .effect img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 1%;
+        cursor: pointer;
+        transition: top .4s ease-in-out,right .4s ease-in-out;
+    }
+
+        .effect img.top:hover {
+            top: -10%;
+            right: -50%;
+            padding-bottom: 70%;
+            padding-left: 60%;
+        }
+</style>
+<div class="container-fluid" style="height:60%; width:100%; margin-top:6%;">
+
+    <img src="~/OurProImages/find_doctor-733x202.png"  style="height:60%;width:102%; margin-left:-1%; margin-top:-1%;" />
+</div>
+<div class="container" style="margin-top: 1%; height: auto; background-color: rgba(81, 92, 82, 1);">
+    <h2 style="margin-left: 2%; font-family: Gabriola; font-weight: bold; color: rgba(194, 112, 76, 1); ">Find a doctor you trust. Get the care you need</h2>
+    <div class="row">
+        <h1>Orthopaedic Surgery</h1>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:6%; margin-top:1%;">
+
+                <h2>Dr.Mehar Tanveer</h2>
+                <h2>Orthopaedic Surgen</h2>
+                <h2>Availability:</h2>
+                <p><b>Mon-Fri:</b>   10am-8pm</p>
+                <p><b>Special Appointment:</b>   Sat-Sun:</p>
+                <p><b>Contact NO:</b>   0300-1203828</p>
+                <p><b>Email:</b> MeharTanveer@gmail.com</p>
+
+
+                <img src="~/OurProImages/d1.jpg"  class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:4%; margin-top:1%;">
+
+                <h2>Dr. Naveed Rashid</h2>
+                <h2>Orthopaedic Surgen</h2>
+                <h2>Availability:</h2>
+                <p><b>Mon-Fri: </b>     9am-8pm</p>
+                <p><b>Special Appointment:</b> 1pm-6pm</p>
+                <p><b>Contact NO: </b>     0323-4037213</p>
+                <p><b>Email: </b>     rashidnaveed78@yahoo.com</p>
+
+
+                <img src="~/OurProImages/doctor-image.png"   class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:2%; margin-top:1%;">
+
+                <h2>Dr. Shahzad Aslam</h2>
+                <h2>Orthopaedic Surgen</h2>
+                <h2>Availability:</h2>
+                <p><b> Mon-thurs: </b> 11:00am -   8:00pm</p>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Contact NO: </b>    0323-3635313</p>
+                <p><b>Email: </b>     shahzadaslam178@yahoo.com</p>
+
+                <img src="~/OurProImages/doctor-shahid-javaid.jpg"   class="top" style="height:150%; width:100%; margin-left:2%; margin-top:-1%; " />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <h1>Ophthalmology</h1>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:6%; margin-top:-1%;">
+
+                <h2>Dr. Tayyba Zaman </h2>
+                <h2>Ophthalmologist </h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>  10am-8pm</p>
+                <p><b>Contact NO: </b>  0323-3279313</p>
+                <p><b>Email: </b>    tayybazaman178@yahoo.com</p>
+
+
+
+                <img src="~/OurProImages/11.jpg"  class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:4%; margin-top:-1%;">
+                <h2>Dr. Nadia Khan </h2>
+                <h2>Ophthalmologist</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>  10am-8pm</p>
+                <p><b>Contact NO: </b>  0323-3279313</p>
+                <p><b>Email: </b>    nadiakhan178@yahoo.com</p>
+
+
+                <img src="~/OurProImages/d9.jpg" class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:2%; margin-top:-1%;">
+
+                <h2>Dr. Zahid Asghar</h2>
+                <h2>Ophthalmologist</h2>
+                <h2>Availability:</h2>
+                <p><b> Mon-thurs: </b> 11:00am -   8:00pm</p>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Contact NO: </b>    0323-3279313</p>
+                <p><b>Email: </b>     drzahid178@yahoo.com</p>
+
+
+
+                <img src="~/OurProImages/Dr%20Azim%20Jahangir%20Khan.jpg"  class="top" style="height:150%; width:100%; margin-left:2%; margin-top:-1%; " />
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <h1>Cardiology</h1>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:6%; margin-top:-1%;">
+
+                <h2>Dr. Naveed Khokhar</h2>
+                <h2> Cardiac Surgern</h2>
+                <h2>Availability:</h2>
+                <p><b>Thurs-Sun:</b>  8am-7pm</p>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Contact NO:</b>  0310-6928728</p>
+                <p><b>Email: </b>    naveedkhokhr778@yahoo.com</p>
+
+
+                <img src="~/OurProImages/1338191042.jpg"    class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:4%; margin-top:-1%;">
+                <h2>Dr. Haroon Sayal </h2>
+                <h2>Cardiac Surgern</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>  10am-8pm</p>
+                <p><b>Contact NO: </b>  0323-3279313</p>
+                <p><b>Email: </b>    haronjutt178@yahoo.com</p>
+
+
+
+                <img src="~/OurProImages/Dr%20Shafiq%20Cheema.jpg"    class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:2%; margin-top:-1%;">
+
+                <h2>Dr. Ali hassan</h2>
+                <h2>Cardiac Surgen</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>   10am-8pm</p>
+                <p><b>Contact NO: </b>   0300-1203828</p>
+                <p><b>Email: </b>   rahatjutt32@gmail.com</p>
+
+
+                <img src="~/OurProImages/Prof%20Miraj%20Muhammad%20Khan.jpg" class="top" style="height:150%; width:100%; margin-left:2%; margin-top:-1%; " />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <h1>Plastic Sergery</h1>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:6%; margin-top:-1%;">
+                <h2>Dr. Sara Umer</h2>
+                <h2> Plastic surgeon</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Thurs-Sun:</b>  8am-7pm</p>
+                <p><b>Contact NO:</b>  0310-6985428</p>
+                <p><b>Email: </b>  saraumer769@gmail.com</p>
+
+
+
+
+
+                <img src="~/OurProImages/Sarah_Umar.JPG"   class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:4%; margin-top:-1%;">
+                <h2>Dr. Raja Shahzad </h2>
+                <h2>Plastic surgern</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>  10am-8pm</p>
+                <p><b>Contact NO: </b>  0323-3276973</p>
+                <p><b>Email: </b>    shahzadraja123@yahoo.com</p>
+
+                <img src="~/OurProImages/Dr_Raja_Shahzad.JPG"  class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:2%; margin-top:-1%;">
+
+                <h2>Dr. Nazia jawad </h2>
+                <h2>Plastic Surgen</h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>   10am-8pm</p>
+                <p><b>Contact NO: </b>   0300-1203828</p>
+                <p><b>Email: </b>   naziajawad32@gmail.com</p>
+
+
+
+
+                <img src="~/OurProImages/Dr.Alia.jpg"  class="top" style="height:150%; width:100%; margin-left:2%; margin-top:-1%; " />
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <h1>Dentistry</h1>
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:6%; margin-top:-1%;">
+
+                <h2>Dr. Kamran Malik</h2>
+                <h2>Dentits </h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Thurs-Sun:</b>  8am-7pm</p>
+                <p><b>Contact NO:</b>  0310-6928728</p>
+                <p><b>Email: </b>  KamranM129@gmail.com</p>
+
+
+
+                <img src="~/OurProImages/image%203.jpg"     class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:4%; margin-top:-1%;">
+                <h2>Dr. Asif Waqar</h2>
+                <h2>Dentits </h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>  10am-8pm</p>
+                <p><b>Contact NO: </b>  0323-3279313</p>
+                <p><b>Email: </b>  asifwaqar178@yahoo.com</p>
+
+
+
+                <img src="~/OurProImages/Dr%20M%20Ehsan%20Bari.jpg"   class="top" style="height:150%; width:100%; margin-left:20%; margin-top:-1%; " />
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class=" img effect" style="height:120%; width:90%; margin-left:2%; margin-top:-1%;">
+                <h2>Dr. Rahat Jutt</h2>
+                <h2>Dentists </h2>
+                <h2>Availability:</h2>
+                <p>
+                    <b>Special Appointment:</b>
+                    Friday 6:00pm - 8:00pm
+                </p>
+                <p><b>Mon-Fri: </b>   11am-4pm</p>
+                <p><b>Contact NO: </b>   0300-1203828</p>s
+                <p><b>Email: </b>   rahatjutt32@gmail.com</p>
+
+
+                <img src="~/OurProImages/download.jpg"  class="top" style="height:130%; width:100%; margin-left:2%; margin-top:-1%; margin-bottom:-5% " />
+            </div>
+        </div>
+
+    </div>
+</div>

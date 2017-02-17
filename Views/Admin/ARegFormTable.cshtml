@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "ARegFormTable";
+    Layout = "~/Views/AdminDashLayout.cshtml";
+}
+
+<style>
+    .contr {
+        height: 40px;
+    }
+</style>
+
+<body style="background-color: rgba(81, 92, 82, 1);">
+    <div class="container" style=" background-color: #333; border-radius:5%; width:70% ; height:700%;  margin-top:8%; margin-bottom:6%">
+        <h1 style="color:white; font-family:Gabriola;margin-left:34%; margin-bottom:3%">Patient Registration Form</h1>
+
+        <form style=" margin-bottom:2%; ">
+            <fieldset id="inputs">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input id="firstname" class="form-control contr" type="text" name="firstname" placeholder="First Name*" required /><br />
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="lastname" class="form-control contr" type="text" name="lastname" placeholder="Last Name*" required /><br />
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="emailad" class="form-control contr" type="text" name="email" placeholder="Email adress*" required /><br />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input class="form-control contr" id="Password" name="Password" placeholder="Password*" type="password" /><br />
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="phoneno" type="text" class="form-control contr" name="Phoneno" placeholder=" Phone No*" required /><br />
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="email" type="email" class="form-control contr" name="email" placeholder="Email*" required><br />
+                        <br />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <input id="date" class="form-control contr" type="date" name="date" placeholder=" Date of Birth*" required /><br />
+                    </div>
+                    <div class="col-sm-4 ">
+                        <label style="color:white">Gender:</label>  &nbsp;<input type="radio" name="Gender" />
+                        <label style=" color:white">
+                            Female
+                        </label>
+                        <input type="radio" name="Gender" />&nbsp;<label style=" color:white"> Male</label>
+
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="city" class="form-control contr" type="text" name="city" placeholder="City*" required /><br />
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-4">
+
+
+                            <select class=" form-control contr" style="width:96%; margin-left:3%">
+
+                                <option value="Martial">Martial Status</option>
+                                <option value="1">Single</option>
+                                <option value="2">Married</option>
+                            </select><br />
+                        </div>
+
+                        <div class="col-sm-4 ">
+                            <select class=" form-control contr" style="width:96%; margin-left:1%">
+
+                                <option value="Department">Choose Department</option>
+                                <option value="1">Cardiology</option>
+                                <option value="2">Dentisry</option>
+                                <option value="3">Emergency Room</option>
+                                <option value="4">Surgury</option>
+                                <option value="5">Pediatrics</option>
+                                <option value="6">Laboratory</option>
+                            </select><br />
+                        </div>
+
+                        <div class="col-sm-4 ">
+                            <select class=" form-control contr" style="width:96%; margin-left:-1%">
+
+                                <option value="Department">Choose Ward No*</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select><br />
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4" style="margin-left:1%">
+                            <input id="Pid" class="form-control contr" type="text" style="width:96%" name="firstname" placeholder="Patient Id*" required /><br />
+                        </div>
+
+
+                        <div class="col-sm-4 " style="margin-left:-0.6%">
+
+                            <input id="gname" class="form-control contr" type="text" name="LastName" style="width:96%" placeholder="Guardian Name*" required /><br />
+                        </div>
+                        <div class="col-sm-4 " style="margin-left:-0.5%">
+                            <input id="gphone" class="form-control contr" type="text" name="GuardianName" style="width:96%" placeholder="Guardian Phone No*" required /><br />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4" style="margin-left:1%">
+                            <input id="occupation" class="form-control contr" type="text" style="width:96%" name="Occupation" placeholder="Occupation*" required /><br />
+                        </div>
+                        <div class="col-sm-4 " style="margin-left:-0.6%">
+                            <input id="consultingDrName" class="form-control contr" style="width:96%" type="text" name="Consulting Dr.Name"
+                                   placeholder="Consulting Dr. Name*" required /><br />
+                        </div>
+                        <div class="col-sm-4 " style="margin-left:-0.5%">
+                            <input id="Bed No" class="form-control contr" type="text" style="width:96%" name="Bed No" placeholder="Bed No*" required /><br />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4" style="margin-left:1%">
+                            <input id="responsible" class="form-control contr " type="text" name="Responsible" style="width:96%"
+                                   placeholder="Who is financially responsible for Doctor?*" required /><br />
+                        </div>
+                        <div class="col-sm-4 " style="margin-left:-0.6%">
+                            <input id="emergency no" class="form-control contr" type="text" style="width:96%" name="Emergency No" placeholder="Emergency No*" required /><br />
+                        </div>
+                        <div class="col-sm-4 " style="margin-left:-0.5%">
+                            <input id="relationship to patient" class="form-control contr" style="width:96%" type="text" name="relationship to patient"
+                                   placeholder="Relationship To Patient*" required /><br />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4" style="margin-left:1%">
+                            <input id="OfcNo" class="form-control contr" type="text" style="width:96%" name="Office Phone No" placeholder="Office Phone No*" required /><br />
+                        </div>
+
+
+                    </div>
+
+
+                    <input type="submit" value="Register" style="margin-left:45%; width:12%; height:40px; text-align:center">
+
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+

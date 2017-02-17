@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link href="~/Content/MasterCrouselSStyle.css" rel="stylesheet" />
+    <script>
+        function Mover(x) {
+            x.style.color = 'rgba(194, 112, 76, 1)'
+          
+                
+           
+
+        }
+
+        function Mout(x) {
+            x.style.color ='white'
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p class="navbar-brand" style="font-family: Gabriola; font-size:280%; color:rgba(194, 112, 76, 1);
+				margin-top:10px; text-transform:uppercase "><b>Doctor Quick </b></p>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10%; color: rgba(194, 112, 76, 1);">
+                <li>
+                    <a href=" /Main/CrouselDivs" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili">
+                        Home
+                    </a>
+                </li>
+
+
+
+                <li><a href="/Main/Appointment " onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili">Find Doctor</a></li>
+
+                <li><a href="/Departments/EmergencyRoom" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili">Departments</a></li>
+
+                <li><a href="/Main/AboutUs" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili">About Us</a></li>
+
+                <li>
+                    <a href="/Main/SignIn" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili" style="font-size:17px">
+                        <span class="glyphicon glyphicon-log-in"></span>
+                        Sign In
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Main/SignUp" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavlili" style="font-size:17px">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Sign Up
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+
+        <div class="clearfix"></div>
+
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+    <div class="container-fluid" style="background-color:#333; " >
+        <div class="container" >
+            <div class="row footermargin" style="margin-top: 1%;" >
+                <div class="col-lg-4 col-md-5">
+                    
+                   
+                    <h1>Contact Information</h1>
+                    <p style="color: white; font-size: 15px; margin-left: 30%"><span class="glyphicon glyphicon-earphone">Telephone:</span></p>
+
+                    <p style="color: white; margin-left: 25%" > +92 (042) 8449100</p>
+                    
+                    <p style="color: white; margin-left: 25%"> +92 (042) 2315249</p>
+                    
+                    <p style="color: white; margin-left: 25%"> +92 (042) 2315262</p>
+                    <a href="https://www.facebook.com/" class="facebook" itemprop="sameAs">
+
+                        <img src="~/OurProImages/facebook.png" width="40" height="40" style="margin-top:10% ; margin-left:8%" />
+                    </a>
+                    <a href="https://twitter.com/" class="twitter" itemprop="sameAs">
+
+                        <img src="~/OurProImages/twitter.png" width="40" height="40" style="margin-top:10%; margin-left:3%" />
+                    </a>
+                    <a href="https://plus.google.com/" class="google" itemprop="sameAs">
+
+                        <img src="~/OurProImages/gmail.png" width="40" height="40" style="margin-top: 10%; margin-left: 3%" />
+                    </a>
+                    <a href="https://www.instagram.com/?hl=en" class="Insta" itemprop="sameAs">
+                        <img src="~/OurProImages/instagram.jpg" width="40" height="40" style="margin-top: 10%; border-radius: 17%; margin-left: 3%" />
+                    </a>
+</div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="row " style=" margin-bottom: 1%">
+                        <div class="col-lg-6 col-sm-7">
+                            <div class="row">
+                                <nav class="col-xs-10 footer-nav">
+                                    <h1>Patients & visitors</h1>
+                                    <ul>
+                                        <li><a href="#" style="color:white">Registration & admission</a></li>
+                                        <li><a href="#" style="color:white">Hospital stay</a></li>
+                                        <li><a href="#" style="color:white">Hospital discharge & feedback</a></li>
+                                        <li><a href="#" style="color:white"> Advice & support</a></li>
+                                        <li><a href="#" style="color:white">Patients' rights</a></li>
+                                        <li><a href="#" style="color:white">Visiting hours & directions</a></li>
+                                        <li>
+                                   <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+                                            <div id="SkypeButton_Call_tayyba.pervaiz396_1">
+                                                <script type="text/javascript">
+                                                    Skype.ui({
+                                                        "name": "dropdown",
+                                                        "element": "SkypeButton_Call_tayyba.pervaiz396_1",
+                                                        "participants": ["tayyba.pervaiz396"],
+                                                        "imageSize": 24
+                                                    });
+                                                </script>
+                                                </div>
+</li>
+
+                                    </ul>
+
+                                </nav>
+
+                                
+                            </div>
+                        </div>
+                        <div class="row" style=" margin-bottom: 1%">
+                            <div class="col-lg-6 col-sm-5 ">
+                                <h1 style="text-align:left">Leave a Comment</h1>
+                                <input id="firstname" class="form-control" type="text"  name="firstname" style="width:65%" placeholder=" Name*" required /><br />
+                                <input id="email" type="email" class="form-control" name="email" style="width:65%" placeholder="Email*" required><br />
+                                <textarea class="form-control" placeholder="Leave a Comment...." name="comment" style="width:85%; height:120px" id="comment" style="margin: 0px -4px 0px 0px; height: 135px; width: 378px;"></textarea>
+                                <input class="form-control" type='hidden' name='cmnt' id='cmnt' value='' />
+                                <br>
+                                <b> <input type='submit' value='Submit' /></b>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+</body>
+
+</html>

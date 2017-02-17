@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <script>
+        function Mover(x) {
+            x.style.color = ' white'
+           
+        }
+
+        function Mout(x) {
+            x.style.color = ' rgba(194, 112, 76, 1)'
+        }
+    </script>
+   
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p class="navbar-brand" style="font-family: Gabriola; font-size:280%; color:rgba(194, 112, 76, 1);
+				margin-top:10px; "><b>DEPARTMENT </b></p>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 3%; color: #34a58e; ">
+                <li><a href="/Main/CrouselDivs" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Home</a></li>
+
+                <li>
+                    <a href=" /Departments/LaboratoryBloodBank" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">
+                        Laboratory & Blood Bank
+                    </a>
+                </li>
+
+                <li><a href="/Departments/Pediatrics" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Pediatrics</a></li>
+
+                <li><a href="/Departments/ERoom " onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Emergency Room</a></li>
+
+                <li><a href="/Departments/Dentisry" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Dentisry</a></li>
+
+                <li><a href="/Departments/Surgery" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Surgery</a></li>
+
+                <li><a href="/Departments/Cardiology" onmouseover="Mover(this)" onmouseout="Mout(this)" class="dpnavli">Cardiology</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody();
+    </div>
+
+   
+    
+           
+</body>
+</html>

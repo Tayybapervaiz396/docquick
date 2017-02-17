@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "ADocFormTable";
+    Layout = "~/Views/AdminDashLayout.cshtml";
+    <link href="~/Content/TabularSheet.css" rel="stylesheet" />
+}
+
+<body style="background-color: rgba(81, 92, 82, 1)">
+    <!-- ./container -->
+    <div class="container" style=" background-color: #333;margin-left:10%; border-radius: 5%;
+ width: 80%; height: 600px; margin-top: 5%; margin-bottom: 6%">
+        <h1 style=" color: white;">Doctor &nbsp; Information  &nbsp;Table</h1>
+        <div style="position: absolute; height: 83%;width:74%; overflow: auto; ">
+            <div style="height: 40%;">
+                <table class="blue">
+                    <thead style="width:90%; font-family:Gabriola; padding:10%; font-size:150%">
+                        <tr>
+                            <th>Doctor Id</th>
+                            <th>In which spacialist</th>
+
+                            <th>working days</th>
+                            <th>Avail Timing</th>
+                            <th>Status</th>
+                            <th>Fee Charges </th>
+
+
+
+                            <th>Action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>Mais</td>
+                            <td>Allo !</td>
+                            <td>Non</td>
+                            <td>Mais</td>
+                            <td>Allo !</td>
+                            <td>Non</td>
+                            <td>Mais</td>
+
+                        </tr>
+                        <tr>
+                            <td>Non</td>
+                            <td>Mais</td>
+                            <td>Allo !</td>
+                            <td>Non</td>
+                            <td>Mais</td>
+                            <td>Allo !</td>
+                            <td>Non</td>
+
+
+
+
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
+
+
+            <script>
+                ; (function ($) {
+                    $.fn.fixMe = function () {
+                        return this.each(function () {
+                            var $this = $(this),
+                               $t_fixed;
+                            function init() {
+                                $this.wrap('<div class="container" />');
+                                $t_fixed = $this.clone();
+                                $t_fixed.find("tbody").remove().end().addClass("fixed").insertBefore($this);
+                                resizeFixed();
+                            }
+                            function resizeFixed() {
+                                $t_fixed.find("th").each(function (index) {
+                                    $(this).css("width", $this.find("th").eq(index).outerWidth() + "px");
+                                });
+                            }
+                            function scrollFixed() {
+                                var offset = $(this).scrollTop(),
+                                tableOffsetTop = $this.offset().top,
+                                tableOffsetBottom = tableOffsetTop + $this.height() - $this.find("thead").height();
+                                if (offset < tableOffsetTop || offset > tableOffsetBottom)
+                                    $t_fixed.hide();
+                                else if (offset >= tableOffsetTop && offset <= tableOffsetBottom && $t_fixed.is(":hidden"))
+                                    $t_fixed.show();
+                            }
+                            $(window).resize(resizeFixed);
+                            $(window).scroll(scrollFixed);
+                            init();
+                        });
+                    };
+                })(jQuery);
+
+                $(document).ready(function () {
+                    $("table").fixMe();
+                    $(".up").click(function () {
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 2000);
+                    });
+                });
+            </script>
+
+
+
+        </div>
+
+    </div>
+
+
+</body>

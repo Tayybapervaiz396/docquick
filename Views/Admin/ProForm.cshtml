@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "ProForm";
+    Layout = "~/Views/AdminDashLayout.cshtml";
+}
+
+<body style="background-color: rgba(81, 92, 82, 1);">
+    <!-- ./container -->
+    <div class="container" style=" background-color: #333; border-radius:5%; width:45% ;
+ height:300%;  margin-top:10%; margin-bottom:6%">
+        <h1 style="color:white; font-family:Gabriola; text-align:center;">Profile Information</h1>
+
+        <form style="margin-top:5%; margin-bottom:2%; ">
+
+            <fieldset id="inputs">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <input id="firstname" class="form-control" type="text" name="firstname" placeholder="First Name*" required /><br />
+                   
+                    </div>
+                    <div class="col-sm-6">
+                        <input id="lastname" class="form-control" type="text" name="lastname" placeholder="Last Name*" 
+                               required  /><br />
+                    </div>
+
+
+                </div>
+                
+                <input id="email" type="email" class="form-control" style="width: 100%; " name="email" 
+                       placeholder="Email*" required><br />
+
+                <input id="adress" class="form-control" type="text" style="width: 100%" name="address" placeholder="Address*" required /><br />
+
+
+
+                <label style="margin-left:10%; color:white">Gender:</label>  &nbsp;<input type="radio" name="Gender" />
+                <label style=" color:white">
+                    Female
+                </label>
+                <input type="radio" name="Gender" />&nbsp;<label style=" color:white"> Male</label>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <input id="phoneno" type="tel" class="form-control" name="phoneno" placeholder="Phone No*"
+                                required  /><br />
+                    </div>
+                    <div class="col-sm-6 ">
+                        <input id="city" class="form-control" type="text" name="city" placeholder="City*" 
+                               required  /><br />
+                    </div>
+
+
+                </div>
+
+                <input id="date" class="form-control" type="date" style="width: 100%;
+ " name="date" placeholder=" Date of Birth*" required /><br />
+
+                <button type="button" id="btn1" style=" margin-left:45%; margin-bottom:2%; border-radius: 10px; font-family: Gabriola;
+ color: rgba(194, 112, 76, 1); font-size:25px; border: solid double">
+                    Register
+                </button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>

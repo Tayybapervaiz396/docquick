@@ -1,0 +1,57 @@
+﻿ body {
+        background-color: azure;
+    }
+    h1 {
+        
+        margin-top:1px;
+        width: 100%;
+        color: rgba(194, 112, 76, 1);
+        text-align: center;
+        font-family: gabriola;
+        font-weight: bold;
+    }
+
+    .img {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: 20px;
+        margin-top: 40px;
+        background-color: rgba(26,76,110,0.5);
+    }
+
+        .img p, .img h2 {
+            color: #fff;
+            padding: 2px;
+            left: 20px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .img p {
+            font-family: 'Times New Roman';
+            font-size: 15px;
+        }
+
+        .img h2 {
+            font-family: 'Times New Roman';
+            font-size: 25px;
+        }
+
+    .effect img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 2px;
+        cursor: pointer;
+        transition: top .4s ease-in-out,right .4s ease-in-out;
+    }
+
+        .effect img.top:hover {
+            top: -230px;
+            right: -330px;
+            padding-bottom: 200px;
+            padding-left: 300px;
+        }
+
